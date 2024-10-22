@@ -42,9 +42,10 @@ const TerminalChat = () => {
         ...prevMessages,
         { original: originalText, translated: translatedText },
       ]);
-      setInput("");
+      setInput(""); 
     } catch (err) {
       setError("Translation Error: Invalid input");
+      console.log(err)
     }
   };
 
